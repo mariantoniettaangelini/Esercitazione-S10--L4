@@ -1,0 +1,14 @@
+
+    <div class="card">
+      <img src="{{onePic.url}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{onePic.title}}</h5>
+        <div class="d-flex justify-content-between">
+        <button class="btn btn-success" (click)="addToFavs(onePic)" [disabled]="isFav(onePic.id)">ADD</button>
+        <button class="btn btn-danger" (click)="delete(onePic.id)">Delete</button>
+        <button class="btn btn-warning" (click)="like()">Like</button>
+        </div>
+        <p>Numero like: {{likeCount}}</p>
+      </div>
+    </div>
+

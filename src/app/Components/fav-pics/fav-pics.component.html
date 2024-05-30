@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+        <h1>Post preferiti</h1>
+        <h2 *ngIf="favs.length === 0">Non ci sono preferiti</h2>
+        <div class="card" *ngFor="let f of favs">
+          <img src="{{f.url}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{f.title}}</h5>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
